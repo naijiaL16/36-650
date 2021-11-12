@@ -59,7 +59,7 @@ class Node:
             else:
                 self.insert(value)
     
-    def traversal_return(self, return_values = one):
+    def traversal_return(self, return_values = None):
         if self.small:
             self.small.traversal_return(return_values)
         if return_values is not None:
