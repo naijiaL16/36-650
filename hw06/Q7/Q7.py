@@ -58,7 +58,8 @@ class Node:
                 self.data = value
             else:
                 self.insert(value)
-    
+                
+    # function of iterating through the tree for deleting
     def traversal_return(self, return_values = None):
         if self.small:
             self.small.traversal_return(return_values)
